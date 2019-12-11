@@ -21,7 +21,9 @@ e.g. the user researcher could use the proto to create the test scenario data, a
 Or you could repeat what a user did in testing and save that data.
 
 
-## How does setting scenario data work?
+## How does the code work? how do i add to this, or add this to my own proto?
+
+all the pages needed are in the route of the app/views folder - you need the admin page, the stored-data page, and to look in the routes.js file.
 
 The admin page has a link for each vehicle registration scenario - which clicking, sets up the 'saved' data and puts the user on the vehicle registration page - which is partway though the full journey.
 If you look at the scenario links in the admin page you'll see that they all go to different pages - but actually they don't...
