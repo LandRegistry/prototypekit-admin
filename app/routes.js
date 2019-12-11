@@ -9,6 +9,13 @@ router.get('/stored-data', function (req, res) {
   res.render('stored-data')
 })
 
+
+router.get('/docs/examples/pass-data/vehicle-registration-clean', function (req, res) {
+	req.session.data = {}
+  res.redirect('vehicle-registration')
+})
+
+
 router.get('/docs/examples/pass-data/vehicle-registration-car1', function (req, res) {
 	req.session.data = {
   "vehicle-registration": "test-plate",
@@ -45,6 +52,8 @@ router.get('/docs/examples/pass-data/vehicle-registration-lorry1', function (req
 }
   res.redirect('vehicle-registration')
 })
+
+
 
 
 
